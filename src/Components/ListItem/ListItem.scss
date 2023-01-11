@@ -1,0 +1,81 @@
+.ListItem{
+    width: 225px;
+    height: 120px;
+    background-color: var(--main-color);
+    overflow: hidden;
+    margin-right: 5px;
+    cursor: pointer;
+    color: white;
+    
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    video{
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &:hover{
+        width: 325px;
+        height: 300px;
+        position: absolute;
+        top: -150px;
+        // -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        -webkit-box-shadow: 1px 0px 1px 4px rgba(255,255,255,0.69);
+        -moz-box-shadow: 1px 0px 1px 4px rgba(255,255,255,0.69);
+        box-shadow: 1px 0px 1px 4px rgba(255,255,255,0.69);
+        border-radius: 5px;
+
+        img{
+            height: 140px;
+        }
+        
+        .itemInfo{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+            .icons{
+                display: flex;
+                margin-bottom: 10px;
+
+                .icon{
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    padding: 5px;
+                }
+            }
+            .itemInfoTop{
+                display: flex;
+                align-items: center;
+                color: gray;
+                margin-bottom: 10px;
+                font-weight: 600;
+
+                .limit{
+                    border: 1px solid gray;
+                    margin: 0 10px;
+                    padding: 1px 2px;
+                }
+            }
+            .desc{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .genre{
+                font-size: 14px;
+                color: lightgray;
+            }
+        }
+        
+    }
+}
